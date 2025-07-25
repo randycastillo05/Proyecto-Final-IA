@@ -1,7 +1,7 @@
 # Proyecto-de-Final-IA
 
-## Nombre
+## Nombre  RAndy Castillo
 
-## Matrícula
+## Matrícula 21-EISN-2-007
 
-## Proyecto
+## Proyecto: Generador de musica basado en emociones 
