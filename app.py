@@ -11,6 +11,9 @@ import plotly.graph_objects as go
 import plotly.express as px
 import json
 
+# ============= MODELOS DE DEEP LEARNING =============
+
+# 1. MODELO DE ANÁLISIS DE EMOCIONES EN TEXTO (Transformer)
 emotion_analyzer = pipeline("text-classification", model="j-hartmann/emotion-english-distilroberta-base")
 
 # 2. MODELO DE GENERACIÓN DE EMBEDDINGS MUSICALES (Red Neuronal Personalizada)
