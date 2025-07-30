@@ -1,8 +1,5 @@
-gradio>=4.0.0
-torch>=2.0.0
-transformers>=4.40.0
-numpy>=1.24.0
-librosa>=0.10.0
-soundfile>=0.12.1
-plotly>=5.20.0
-pip install -r requirements.txt
+gradio
+torch
+audiocraft
+torchaudio
+transformers
