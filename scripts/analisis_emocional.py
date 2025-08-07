@@ -4,8 +4,11 @@
 
 from typing import Optional
 import re
+import certifi
+import httpx
+client = httpx.AsyncClient(verify=certifi.where())
 
-# Modelo de emociones base permitidas 
+## scripts/analisis_emocional.py
 EMOCIONES_VALIDAS = {
     "feliz": "happy",
     "triste": "sad",
@@ -16,9 +19,9 @@ EMOCIONES_VALIDAS = {
     "emocionado": "excited"
 }
 
-def extraer_emocion(texto_usuario: str) -> Optional[str]:
+def extraer_emocion(texto_usuario: str):
     texto = texto_usuario.lower()
     for esp, eng in EMOCIONES_VALIDAS.items():
-        if re.search(rf"\b{esp}\b", texto):
+        if esp in texto:
             return eng
     return None
