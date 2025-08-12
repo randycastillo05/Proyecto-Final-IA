@@ -1,7 +1,7 @@
 # Proyecto-de-Final-IA
 
-## Nombre
+## Nombre Randy Castillo
 
-## Matrícula
+## Matrícula 21-EISN-2-007
 
-## Proyecto
+## Proyecto Recomendaor de musica or emocioness 
