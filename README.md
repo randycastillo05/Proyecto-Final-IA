@@ -1,5 +1,11 @@
 # 🎵 Recomendador Musical Inteligente
 
+## Nombre Randy Castillo
+
+## Matrícula 21-EISN-2-007
+
+
+
 Este proyecto es una aplicación web que **analiza las emociones del usuario y recomienda una canción perfecta para su estado de ánimo**, pudiendo también filtrar por **artista** si lo mencionas.  
 Utiliza **OpenAI** para el análisis de emociones y la selección de canciones, y **YouTube API** para mostrar el video recomendado.
 
