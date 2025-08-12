@@ -2,7 +2,7 @@ import gradio as gr
 import os
 from scripts.analisis_emocional import crear_recomendador
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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"
 )
 
 def cargar_css():
@@ -10,7 +10,7 @@ def cargar_css():
         with open('styles.css', 'r', encoding='utf-8') as file:
             return file.read()
     except FileNotFoundError:
-        print("⚠️ Advertencia: No se encontró el archivo styles.css")
+        print(" Advertencia: No se encontró el archivo styles.css")
         return ""
 
 def crear_interfaz():
@@ -25,20 +25,20 @@ def crear_interfaz():
 
         gr.HTML("""
             <div class="header-container">
-                <h1>🎵 Recomendador Musical Inteligente</h1>
+                <h1>Recomendador Musical Inteligente</h1>
                 <p>Descubre la canción perfecta para tu estado de ánimo</p>
             </div>
         """)
 
         with gr.Row():
             with gr.Column(scale=1):
-                gr.Markdown("### 💭 Comparte cómo te sientes (puedes mencionar artista o género)")
+                gr.Markdown("### Comparte cómo te sientes (puedes mencionar artista o género)")
                 entrada = gr.Textbox(
                     placeholder="Ej: Quiero una salsa feliz de Marc Anthony...",
                     label="Describe tu estado de ánimo",
                     lines=3
                 )
-                btn_buscar = gr.Button("🔍 Encontrar Mi Canción", variant="primary")
+                btn_buscar = gr.Button("Encontrar Mi Canción", variant="primary")
 
         gr.Markdown("---")
 
@@ -56,7 +56,7 @@ def crear_interfaz():
 
         def mostrar_resultado(texto_usuario):
             descripcion, enlace_youtube, imagen, preview, _ = recomendador.analizar_emocion_y_recomendar(texto_usuario)
-            boton_youtube = f'<a href="{enlace_youtube}" target="_blank"><button class="youtube-button">▶️ Ver en YouTube</button></a>' if enlace_youtube else ""
+            boton_youtube = f'<a href="{enlace_youtube}" target="_blank"><button class="youtube-button"> Ver en YouTube</button></a>' if enlace_youtube else ""
             return descripcion, boton_youtube, imagen, preview
 
         btn_buscar.click(
